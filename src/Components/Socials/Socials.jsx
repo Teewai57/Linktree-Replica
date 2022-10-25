@@ -4,7 +4,7 @@ import {AiOutlineGithub} from "react-icons/ai"
 
 const Socials = () => {
   return (
-    <div className='md:flex hidden justify-center space-x-3 py-3'>
+    <div className='md:flex hidden justify-center space-x-3 py-3 mb-4'>
       <div>
         <AiOutlineSlack />
       </div>
