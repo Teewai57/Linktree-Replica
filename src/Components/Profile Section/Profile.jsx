@@ -1,6 +1,5 @@
 import React from 'react'
 import ME from "../../assets/me.jpeg"
-import "./Profile.css"
 
 const Profile = () => {
     return (

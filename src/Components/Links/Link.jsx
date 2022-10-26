@@ -4,19 +4,19 @@ const Link = () => {
 
     const data = [
         {
-            link: "https://training.zuri.team/",
+            link: "https://twitter.com/ToyoabasiBob",
             linkTitle: "Twitter Link",
+            id: "twitter"
+        },
+        {
+            link: "https://training.zuri.team/",
+            linkTitle: "Zuri Team",
             id: "btn_zuri"
         },
         {
             link: "http://books.zuri.team ",
-            linkTitle: "Zuri Team",
-            id: "books"
-        },
-        {
-            link: "https://books.zuri.team/python-for-beginners?ref_id=<ToyoAbasiBob>",
             linkTitle: "Zuri Books",
-            id: "book_python"
+            id: "books"
         },
         {
             link: "https://books.zuri.team/python-for-beginners?ref_id=<ToyoAbasiBob>",
@@ -49,7 +49,7 @@ const Link = () => {
 
     return (
 
-      <div className='py-5 space-y-5 p-4'>
+      <div className='py-4 space-y-5 p-4'> 
           {links}
       </div>
     )
