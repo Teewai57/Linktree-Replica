@@ -2,7 +2,7 @@ import React from 'react'
 
 const Socials = () => {
     return (
-        <div className='md:flex hidden justify-center space-x-3 py-3 mb-4'>
+        <div className='flex justify-center space-x-3 py-3 mb-4'>
             <div>
                 <a href="https://www.slack.com/ToyoAbasiBob" target="_blank"  rel='noreferrer'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

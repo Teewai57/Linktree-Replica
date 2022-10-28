@@ -4,7 +4,16 @@
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
 }
+.profile_name{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 56px;
+  padding-top: 24px;}
 
 .middle {
   transition: .5s ease;

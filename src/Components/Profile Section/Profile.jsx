@@ -9,14 +9,14 @@ const Profile = () => {
             <div className='relative flex justify-center flex-wrap profile-section p-4 text-center'>
                 <div className='items-center align-middle'>
                     <div className='flex justify-center py-4 container'>
-                        <img id='profile_img' className='rounded-[50%] w-[6rem] h-[6.5rem] image' src={ME} alt="" />
+                        <img id='profile_img' className='image' src={ME} alt="" />
                         <div className="middle">
                             <div className='camera'>
                                 <BiCamera />
                             </div>
                         </div>
                     </div>
-                    <h3 id='twitter' className='text-[1rem] font-bold'>ToyoAbasi Bob</h3>
+                    <h3 id='twitter' className='profile_name'>ToyoAbasi Bob</h3>
                     <h3 id='slack' className='hidden'>ToyoAbasi Bob</h3>
                 </div>
                 <div className='items-start absolute right-8'>
