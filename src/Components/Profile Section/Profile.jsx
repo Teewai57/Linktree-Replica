@@ -1,13 +1,20 @@
 import React from 'react'
 import ME from "../../assets/me.jpeg"
+import { BiCamera } from "react-icons/bi"
+import "./Profile.css"
 
 const Profile = () => {
     return (
         <>
             <div className='relative flex justify-center flex-wrap profile-section p-4 text-center'>
                 <div className='items-center align-middle'>
-                    <div className='flex justify-center py-4'>
-                        <img id='profile_img' className='rounded-[50%] w-[6rem] h-[6.5rem]' src={ME} alt="" />
+                    <div className='flex justify-center py-4 container'>
+                        <img id='profile_img' className='rounded-[50%] w-[6rem] h-[6.5rem] image' src={ME} alt="" />
+                        <div className="middle">
+                            <div className='camera'>
+                                <BiCamera />
+                            </div>
+                        </div>
                     </div>
                     <h3 id='twitter' className='text-[1rem] font-bold'>ToyoAbasi Bob</h3>
                     <h3 id='slack' className='hidden'>ToyoAbasi Bob</h3>
