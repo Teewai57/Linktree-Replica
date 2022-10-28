@@ -8,7 +8,7 @@ const Profile = () => {
         <>
             <div className='relative flex justify-center flex-wrap profile-section p-4 text-center'>
                 <div className='items-center align-middle'>
-                    <div className='flex justify-center py-4 container'>
+                    <div className='flex justify-center py-2 container'>
                         <img id='profile_img' className='image' src={ME} alt="" />
                         <div className="middle">
                             <div className='camera'>

@@ -1,9 +1,10 @@
 import React from 'react'
 import Ingressive from "../../assets/ingressive.png"
+import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div className='md:block max-w-6xl mx-auto items-center p-3 relative bottom-0'>
+        <div className='md:block max-w-6xl mx-auto items-center p-3 footer'>
             <hr />
             <div className='md:flex block justify-between items-center'>
                 <div  className='self-center py-6'>

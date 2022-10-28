@@ -1,9 +1,10 @@
 import React from 'react'
+import "./Socials.css"
 
 const Socials = () => {
     return (
-        <div className='flex justify-center space-x-3 py-3 mb-4'>
-            <div>
+        <div className='social_links'>
+            <div className='social_icons'>
                 <a href="https://www.slack.com/ToyoAbasiBob" target="_blank"  rel='noreferrer'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.8752 11.2498C20.9106 11.2498 21.75 10.4104 21.75 9.37496V9.37496C21.75 8.33952 20.9105 7.50012 19.8751 7.50012V7.50012C18.8395 7.50012 18 8.33959 18 9.37512V11.2498H19.8752ZM14.625 11.2498C15.6605 11.2498 16.5 10.4103 16.5 9.3748V4.12512C16.5 3.08959 15.6605 2.25012 14.625 2.25012V2.25012C13.5895 2.25012 12.75 3.08959 12.75 4.12512V9.3748C12.75 10.4103 13.5895 11.2498 14.625 11.2498V11.2498Z" fill="#2EB67D" />
@@ -13,7 +14,7 @@ const Socials = () => {
                     </svg>
                 </a>
             </div>
-            <div>
+            <div className='social_icons'>
                 <a href="https://www.github.com/teewai57" target="_blank" rel='noreferrer'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_4627_392534)">
