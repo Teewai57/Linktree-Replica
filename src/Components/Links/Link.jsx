@@ -40,9 +40,8 @@ const Link = () => {
     const links = data.map(
         (element) => {
            return(
-            <button  className='mx-auto inline-block w-full' id={element.id}>
-            <a id={element.id} href={element.link} target="blank" className='bg-[#ecebeb] hover:bg-[#d8d6d6] w-full text-md font-medium inline-block rounded py-3'>{element.linkTitle}</a>
-        </button>
+            
+            <a id={element.id} href={element.link} target="blank" className='bg-[#ecebeb] hover:bg-[#d8d6d6] w-full text-md font-medium inline-block rounded py-5 transition'>{element.linkTitle}</a>
            )
         }
     )
