@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
   margin: 0;
@@ -15,4 +16,5 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+    font-family: 'Inter, sans-serif';
+  }
