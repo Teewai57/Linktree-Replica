@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Link.css"
 
 const Link = () => {
 
@@ -19,7 +20,7 @@ const Link = () => {
             id: "books"
         },
         {
-            link: "https://books.zuri.team/python-for-beginners?ref_id=<ToyoAbasiBob>",
+            link: "https://books.zuri.team/python-for-beginners?ref_id=ToyoAbasiBob",
             linkTitle: "Python Books",
             id: "book_python"
         },
@@ -33,15 +34,13 @@ const Link = () => {
             linkTitle: "Design Books",
             id: "book_design"
         },
-
     ]
 
 
     const links = data.map(
         (element) => {
            return(
-            
-            <a id={element.id} href={element.link} target="blank" className='bg-[#ecebeb] hover:bg-[#d8d6d6] w-full text-md font-medium inline-block rounded py-5 transition'>{element.linkTitle}</a>
+            <a id={element.id} href={element.link} target="blank" className="text-md font-medium transition link_tag">{element.linkTitle}</a>
            )
         }
     )
