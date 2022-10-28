@@ -12,7 +12,7 @@ const Link = () => {
         {
             link: "https://training.zuri.team/",
             linkTitle: "Zuri Team",
-            id: "btn_zuri"
+            id: "btn__zuri"
         },
         {
             link: "http://books.zuri.team ",
@@ -22,7 +22,7 @@ const Link = () => {
         {
             link: "https://books.zuri.team/python-for-beginners?ref_id=ToyoAbasiBob",
             linkTitle: "Python Books",
-            id: "book_python"
+            id: "book__python"
         },
         {
             link: "https://background.zuri.team",
@@ -32,7 +32,7 @@ const Link = () => {
         {
             link: "https://books.zuri.team/design-rules",
             linkTitle: "Design Books",
-            id: "book_design"
+            id: "book__design"
         },
     ]
 
