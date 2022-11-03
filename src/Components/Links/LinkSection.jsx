@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Link.css"
 
-const Link = () => {
+const LinkSection = () => {
 
     const data = [
         {
@@ -57,4 +57,4 @@ const Link = () => {
     )
 }
 
-export default Link
+export default LinkSection
