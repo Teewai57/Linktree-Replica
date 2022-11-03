@@ -34,6 +34,10 @@ const Link = () => {
             linkTitle: "Design Books",
             id: "book__design"
         },
+        {
+            linkTitle: "Contact Me",
+            id: "contact"
+        },
     ]
 
 
