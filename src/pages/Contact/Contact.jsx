@@ -1,9 +1,11 @@
 import React from 'react'
+import Footer from '../../Components/Footer/Footer'
 
 const Contact = () => {
 
 
   return (
+    <>
     <div>
   <div className="mx-auto max-w-5xl px-4 mt-8 md:mt-40 sm:px-6 lg:px-8 py-5">
 
@@ -81,6 +83,8 @@ const Contact = () => {
         </form>
     </div>
   </div>
+  <Footer />
+  </>
   )
 }
 
