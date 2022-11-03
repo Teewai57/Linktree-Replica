@@ -50,7 +50,6 @@ const LinkSection = () => {
                 ))
             }
             <Link to='/contact' id='contact' className="text-md font-medium transition link_tag">Contact Me</Link>
-
         </div>
     )
 }
