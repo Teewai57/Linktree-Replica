@@ -3,7 +3,7 @@ import "./Socials.css"
 
 const Socials = () => {
     return (
-        <div className='social_links'>
+        <div className='social_links mt-4 mb-[2.5rem]'>
             <div className='social_icons'>
                 <a href="https://www.slack.com/ToyoAbasiBob" target="_blank"  rel='noreferrer'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
