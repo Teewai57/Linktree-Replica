@@ -18,7 +18,7 @@ const Contact = () => {
     setValues({...values, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit() {
+  function handleSubmit(e) {
     e.preventDefault();
     validation(values);
   }
