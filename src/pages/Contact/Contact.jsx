@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Footer from '../../Components/Footer/Footer'
+import Validation from '../../Components/Validation'
 
 const Contact = () => {
 
@@ -9,6 +10,8 @@ const Contact = () => {
     email: "",
     message: "",
   })
+
+  const [errors, setError] = useState({})
 
   const data ={
     name: "Toyoabasi Bob"
@@ -20,7 +23,7 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    validation(values);
+   setError( Validation(values));
   }
 
   return (
@@ -47,8 +50,9 @@ const Contact = () => {
                 name='first_name'
                 onChange={handleChange}
                 value={values.firstName}
-                required
+
               />
+              {errors.firstName && <p style={{color: "red", fontSize: "13px"}}>{errors.firstName}</p>}
             </div>
 
             <div className='space-y-2'>
@@ -61,8 +65,9 @@ const Contact = () => {
                 name='last_name'
                 onChange={handleChange}
                 value={values.lastName}
-                required
+
               />
+              {errors.lastName && <p style={{color: "red", fontSize: "13px"}}>{errors.lastName}</p>}
             </div>
 
           </div>
@@ -76,8 +81,8 @@ const Contact = () => {
               name='email'
               onChange={handleChange}
               value={values.email}
-              required
             />
+            {errors.email && <p style={{color: "red", fontSize: "13px"}}>{errors.email}</p>}
           </div>
 
           <div className='space-y-2'>
@@ -91,8 +96,8 @@ const Contact = () => {
               name='message'
               onChange={handleChange}
               value={values.message}
-              required
             ></textarea>
+            {errors.message && <p style={{color: "red", fontSize: "13px"}}>{errors.message}</p>}
           </div>
 
           <div className="col-span-6">
@@ -102,7 +107,7 @@ const Contact = () => {
                 id="MarketingAccept"
                 name="marketing_accept"
                 className="h-5 w-5 border rounded-[1rem] border-gray-200 bg-white shadow-sm "
-                required
+
               />
 
               <span className="text-md text-[#475467] ">
