@@ -18,6 +18,11 @@ const Contact = () => {
     setValues({...values, [e.target.name]: e.target.value })
   }
 
+  function handleSubmit() {
+    e.preventDefault();
+    validation(values);
+  }
+
   return (
     <>
     <div className='md:mb-[5rem]'>
@@ -28,7 +33,7 @@ const Contact = () => {
       <p className='text-md text-[#475467]'>Hi there, contact me to ask about anything you have in mind.</p>
     </div>
 
-        <form action="" className="space-y-4" >
+        <form onSubmit={handleSubmit} className="space-y-4" >
         
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
