@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from '../../Components/Footer/Footer'
 
 const Contact = () => {
 
+  const [values, setValues ] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  })
+
   const data ={
     name: "Toyoabasi Bob"
+  }
+
+  function handleChange(e) {
+    setValues({...values, [e.target.name]: e.target.value })
   }
 
   return (
@@ -17,7 +28,7 @@ const Contact = () => {
       <p className='text-md text-[#475467]'>Hi there, contact me to ask about anything you have in mind.</p>
     </div>
 
-        <form action="" className="space-y-4">
+        <form action="" className="space-y-4" >
         
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -28,6 +39,9 @@ const Contact = () => {
                 placeholder="Enter your first name"
                 type="text"
                 id="first_name"
+                name='first_name'
+                onChange={handleChange}
+                value={values.firstName}
                 required
               />
             </div>
@@ -39,6 +53,9 @@ const Contact = () => {
                 placeholder="Enter your last name"
                 type="text"
                 id="last_name"
+                name='last_name'
+                onChange={handleChange}
+                value={values.lastName}
                 required
               />
             </div>
@@ -51,6 +68,9 @@ const Contact = () => {
               placeholder="yourname@gmail.com"
               type="email"
               id="email"
+              name='email'
+              onChange={handleChange}
+              value={values.email}
               required
             />
           </div>
@@ -63,6 +83,9 @@ const Contact = () => {
               placeholder="Send me a message and i'll reply you as soon as possible..."
               rows="8"
               id="message"
+              name='message'
+              onChange={handleChange}
+              value={values.message}
               required
             ></textarea>
           </div>
@@ -85,7 +108,7 @@ const Contact = () => {
 
           <button
         type="submit"
-        className="block w-full rounded-lg bg-[#1570EF] hover:bg-[#175CD3] px-5 py-4 text-md font-medium transition text-white "
+        className="block w-full rounded-lg bg-[#1570EF] hover:bg-[#175CD3] px-5 py-4 text-md font-medium transition text-white focus:ring-blue-500"
         id='btn__submit'
       >
         Send message
