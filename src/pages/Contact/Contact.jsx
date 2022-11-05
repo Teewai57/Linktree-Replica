@@ -19,12 +19,6 @@ const Contact = () => {
     name: "Toyoabasi Bob"
   }
 
-  const [focused, setFocused] = useState(false);
-
-  const handleFocus = (e) => {
-    setFocused(true);
-  };
-
   function handleChange(e) {
     setValues({ ...values, [e.target.name]: e.target.value })
   }
@@ -52,6 +46,7 @@ const Contact = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4" >
+            
 
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -68,9 +63,7 @@ const Contact = () => {
                   name='firstName'
                   onChange={handleChange}
                   value={values.firstName}
-                  onBlur={handleFocus}
-                  focused={focused.toString}
-
+                  
                 />
                 {errors.firstName && <p style={{ color: "#F83F23", fontSize: "15px" }}>{errors.firstName}</p>}
               </div>

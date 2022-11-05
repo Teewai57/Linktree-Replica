@@ -3,8 +3,7 @@ const Validation = (values) => {
     let errors = {}
 
     if (!values.firstName) {
-        errors.firstName = "Please enter a message" 
-        
+        errors.firstName = "Please enter a message"
     }
     else if (values.firstName.length < 3) {
         errors.firstName = "Must be more than 3 characters"
