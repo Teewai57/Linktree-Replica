@@ -1,0 +1,7 @@
+input:focus:invalid{
+    border: 1px solid red !important;
+}
+
+/* input:focus{
+    border: 1px solid red !important;
+} */

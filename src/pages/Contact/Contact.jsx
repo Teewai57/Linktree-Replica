@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useEffect } from 'react'
 import Footer from '../../Components/Footer/Footer'
 import Validation from '../../Components/Validation'
-
+import "./Contact.css"
 const Contact = () => {
 
   const [values, setValues ] = useState({
@@ -12,11 +12,18 @@ const Contact = () => {
     message: "",
   })
 
+
   const [errors, setError] = useState({})
 
   const data ={
     name: "Toyoabasi Bob"
   }
+
+  const [focused, setFocused] = useState(false);
+
+  const handleFocus = (e) => {
+    setFocused(true);
+ };
 
   function handleChange(e) {
     setValues({...values, [e.target.name]: e.target.value })
@@ -58,7 +65,9 @@ const Contact = () => {
                 name='firstName'
                 onChange={handleChange}
                 value={values.firstName}
-
+                onBlur={handleFocus}
+                focused={focused.toString}
+              
               />
               {errors.firstName && <p style={{color: "#F83F23", fontSize: "15px"}}>{errors.firstName}</p>}
             </div>
@@ -96,7 +105,6 @@ const Contact = () => {
           <div className='space-y-2'>
             <label className="text-md font-[500] text-[#344054]" for="message">Message</label>
             <textarea
-            
               className="w-full rounded-lg border p-3 text-md focus:outline-none focus:shadow-outline focus:border-[#F83F23] "
               placeholder="Send me a message and i'll reply you as soon as possible..."
               rows="8"
@@ -117,7 +125,6 @@ const Contact = () => {
                 className="h-5 w-5 border rounded-[1rem] border-gray-200 bg-white shadow-sm "
 
               />
-
               <span className="text-md text-[#475467] ">
                You agree to providing your data to {data.name} who may contact you.
               </span>
