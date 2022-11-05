@@ -4,7 +4,7 @@ import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div className='md:block max-w-[100rem] mx-auto items-center p-3 footer'>
+        <div className='md:block max-w-[90rem] mx-auto items-center p-3 footer'>
             <hr />
             <div className='md:flex block justify-between items-center'>
                 <div  className='self-center py-6'>
