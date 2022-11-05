@@ -1,7 +1,23 @@
-input:focus:invalid{
+/* input:focus:invalid{
     border: 1px solid red !important;
 }
 
 /* input:focus{
     border: 1px solid red !important;
-} */
+} * */
+
+
+.error input,
+.error textarea {
+    border: 1px rgb(156, 33, 33) solid;
+}
+.error input:focus,
+.error textarea:focus {
+    border: 2px rgb(156, 33, 33) solid;
+    outline: none !important;
+}
+input:focus,
+textarea:focus {
+    border: 2px rgb(66, 159, 240) solid;
+    outline: none !important;
+}
